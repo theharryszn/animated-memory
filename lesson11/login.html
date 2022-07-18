@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juju Login</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: darkslateblue;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.221);
+            /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+            backdrop-filter: blur( 10px );
+            -webkit-backdrop-filter: blur( 4px );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 24rem;
+            margin: auto;
+            margin-top: 7rem;
+            color: white;
+        }
+        
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            border: darkslateblue 2px solid;
+            background-color: transparent;
+            color: white;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.598);
+        }
+
+        input#remember-me {
+            width: fit-content;
+            display: inline;
+        }
+
+        button {
+            display: block;
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: darkslateblue;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        a {
+            color:darkslateblue;
+            text-decoration: none;
+        }
+        
+        form h1 , form p {
+            margin: 4px 0px;
+            padding: 0px;
+        }
+
+        form p {
+            font-size: small;
+        }
+
+        form .details {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            margin: 25px 0px;
+            border: darkslateblue 0.8px solid ;
+            /* opacity: 0.2; */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="details">
+            <h1>Login</h1>
+            <p>Enter your credentials to access you account</p>
+        </div>
+        <input type="email" placeholder="Email Address" id="email" name="email">
+        <input type="password" placeholder="Password" id="password" name="password">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Remember Me</label>
+        <button type="submit">Login</button>
+        <p><a href="#">Forgot password</a></p>
+        <hr>
+        <p style="text-align: center;">Don't have an account? <a href="#">Create account</a></p>
+    </form>
+</body>
+</html>
